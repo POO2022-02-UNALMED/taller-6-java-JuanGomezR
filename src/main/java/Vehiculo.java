@@ -33,10 +33,10 @@ public class Vehiculo{
         String resultado=("Automoviles: " + Vehiculo.cantidadAutomoviles +"\n" + "Camionetas: " + Vehiculo.cantidadCamionetas + "\n" + "Camiones: "+ Vehiculo.cantidadCamiones);
         return resultado;
     }
-    public void setCantidadVehiculos(int cantidadVehiculos){
+    public static void setCantidadVehiculos(int cantidadVehiculos){
         Vehiculo.cantidadVehiculos=cantidadVehiculos;
     }
-    public int getCantidadVehiculos(){
+    public static int getCantidadVehiculos(){
         return Vehiculo.cantidadVehiculos;
     }
     public int getPuertas(){
