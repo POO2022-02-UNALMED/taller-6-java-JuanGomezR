@@ -5,10 +5,11 @@ public class Fabricante{
     public String nombre;
     public Pais pais;
     public int ventas=0;
-    static ArrayList<Fabricante> fabricas= new ArrayList<>();
+    public static ArrayList<Fabricante> fabricas= new ArrayList<>();
     public Fabricante(String nombre, Pais pais){
         this.nombre=nombre;
         this.pais=pais;
+        Fabricante.fabricas.add(this);
     }
     public Fabricante(){
         this.ventas=0;
@@ -29,7 +30,7 @@ public class Fabricante{
         Fabricante max=new Fabricante();
         for (int i=0; i < Fabricante.fabricas.size(); i++){
             if (Fabricante.fabricas.get(i).ventas > max.ventas){
-                max=Fabricante.fabricas.get(i);
+                max= Fabricante.fabricas.get(i);
             }
         }
         return max;
