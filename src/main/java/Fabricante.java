@@ -11,6 +11,7 @@ public class Fabricante{
         this.pais=pais;
     }
     public Fabricante(){
+        this.ventas=0
     }
     public void setNombre(String nombre){
         this.nombre=nombre;

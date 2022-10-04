@@ -10,6 +10,7 @@ public class Pais{
         Pais.paises.add(this);
     }
     public Pais(){
+        this.ventas=0
     }
     public void setNombre(String nombre){
         this.nombre=nombre;
