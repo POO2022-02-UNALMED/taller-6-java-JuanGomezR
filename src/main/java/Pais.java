@@ -1,4 +1,5 @@
 package vehiculos;
+import java.util.*;
 
 public class Pais{
     public String nombre;
@@ -17,11 +18,11 @@ public class Pais{
     public Pais paisMasVendedor(){
         Pais max=null;
         for (int i=0; i < Pais.paises.size(); i++){
-            if (max=null){
-                max= pais.paises.get(i);
+            if (max==null){
+                max=Pais.paises.get(i);
             }
             else if (Pais.paises.get(i).ventas > max.ventas){
-                max= pais.paises.get(i);
+                max= Pais.paises.get(i);
             }
         }
         return max;
