@@ -33,4 +33,34 @@ public class Vehiculo{
         String resultado=("Automoviles: " + Vehiculo.cantidadAutomoviles +"\n" + "Camionetas: " + Vehiculo.cantidadCamionetas + "\n" + "Camiones: "+ Vehiculo.cantidadCamiones);
         return resultado;
     }
+    public void setCantidadVehiculos(int cantidadVehiculos){
+        Vehiculo.cantidadVehiculos=cantidadVehiculos;
+    }
+    public int getCantidadVehiculos(){
+        return Vehiculo.cantidadVehiculos;
+    }
+    public int getPuertas(){
+        return this.puertas;
+    }
+    public String getTraccion(){
+        return this.traccion;
+    }
+    public int getVelocidadMaxima(){
+        return this.velocidadMaxima;
+    }
+    public String getPlaca(){
+        return this.placa;
+    }
+    public String getNombre(){
+        return this.nombre;
+    }
+    public int getPrecio(){
+        return this.precio;
+    }
+    public int getPeso(){
+        return this.peso;
+    }
+    public Fabricante getFabricante(){
+        return this.fabricante;
+    }
 }

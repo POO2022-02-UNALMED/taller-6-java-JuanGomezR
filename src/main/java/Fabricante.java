@@ -6,7 +6,7 @@ public class Fabricante{
     public Pais pais;
     public int ventas=0;
     static ArrayList<Fabricante> fabricas= new ArrayList<>();
-    Fabricante(String nombre, Pais pais){
+    public Fabricante(String nombre, Pais pais){
         this.nombre=nombre;
         this.pais=pais;
     }
@@ -22,7 +22,7 @@ public class Fabricante{
     public Pais getPais(){
         return this.pais;
     }
-    public Fabricante fabricaMayorVentas(){
+    public static Fabricante fabricaMayorVentas(){
         Fabricante max=null;
         for (int i=0; i < Fabricante.fabricas.size(); i++){
             if (max==null){

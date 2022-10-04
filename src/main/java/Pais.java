@@ -5,7 +5,7 @@ public class Pais{
     public String nombre;
     public int ventas=0;
     public static ArrayList<Pais> paises= new ArrayList<>();
-    Pais(String nombre){
+    public Pais(String nombre){
         this.nombre=nombre;
         Pais.paises.add(this);
     }
@@ -15,7 +15,7 @@ public class Pais{
     public String getNombre(){
         return this.nombre;
     }
-    public Pais paisMasVendedor(){
+    public static Pais paisMasVendedor(){
         Pais max=null;
         for (int i=0; i < Pais.paises.size(); i++){
             if (max==null){
