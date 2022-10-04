@@ -12,6 +12,9 @@ public class Camion extends Vehiculo{
         this.puertas=2;
         this.velocidadMaxima=80;
         this.traccion="4X2";
+        fabricante.pais.ventas++;
+        fabricante.ventas++;
+        Vehiculo.cantidadVehiculos++;
         Vehiculo.cantidadCamiones++;
     }
 }

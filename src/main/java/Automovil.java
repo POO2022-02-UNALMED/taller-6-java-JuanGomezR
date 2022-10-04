@@ -12,6 +12,9 @@ public class Automovil extends Vehiculo{
         this.puertas=4;
         this.velocidadMaxima=100;
         this.traccion="FWD";
+        fabricante.pais.ventas++;
+        fabricante.ventas++;
+        Vehiculo.cantidadVehiculos++;
         Vehiculo.cantidadAutomoviles++;
     }
 }

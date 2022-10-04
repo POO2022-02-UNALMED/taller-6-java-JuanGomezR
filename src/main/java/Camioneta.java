@@ -12,6 +12,9 @@ public class Camioneta extends Vehiculo{
         this.volco=volco;
         this.velocidadMaxima=90;
         this.traccion="4X4";
+        fabricante.pais.ventas++;
+        fabricante.ventas++;
+        Vehiculo.cantidadVehiculos++;
         Vehiculo.cantidadCamionetas++;
     }
 }

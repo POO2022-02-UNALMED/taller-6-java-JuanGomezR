@@ -24,11 +24,6 @@ public class Vehiculo{
         this.fabricante=fabricante;
         Vehiculo.cantidadVehiculos++;
     }
-    public Vehiculo(){
-        fabricante.ventas++;
-        fabricante.pais.ventas++;
-        Vehiculo.cantidadVehiculos++;
-    }
     public String vehiculosPorTipo(){
         String resultado=("Automoviles: " + Vehiculo.cantidadAutomoviles +"\n" + "Camionetas: " + Vehiculo.cantidadCamionetas + "\n" + "Camiones: "+ Vehiculo.cantidadCamiones);
         return resultado;
