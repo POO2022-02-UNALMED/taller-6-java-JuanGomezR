@@ -10,6 +10,8 @@ public class Fabricante{
         this.nombre=nombre;
         this.pais=pais;
     }
+    public Fabricante(){
+    }
     public void setNombre(String nombre){
         this.nombre=nombre;
     }
@@ -23,15 +25,11 @@ public class Fabricante{
         return this.pais;
     }
     public static Fabricante fabricaMayorVentas(){
-        Fabricante max=null;
+        Fabricante max=new Fabricante();
         for (int i=0; i < Fabricante.fabricas.size(); i++){
-            if (max==null){
-                max= Fabricante.fabricas.get(i);
-            }
-            else if (Fabricante.fabricas.get(i).ventas > max.ventas){
-                max= Fabricante.fabricas.get(i);
+            if (Fabricante.fabricas.get(i).ventas > max.ventas){
+                max=Fabricante.fabricas.get(i);
             }
         }
         return max;
-    }
 }

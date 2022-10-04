@@ -9,6 +9,8 @@ public class Pais{
         this.nombre=nombre;
         Pais.paises.add(this);
     }
+    public Pais(){
+    }
     public void setNombre(String nombre){
         this.nombre=nombre;
     }
@@ -16,12 +18,9 @@ public class Pais{
         return this.nombre;
     }
     public static Pais paisMasVendedor(){
-        Pais max=null;
+        Pais max=new Pais();
         for (int i=0; i < Pais.paises.size(); i++){
-            if (max==null){
-                max=Pais.paises.get(i);
-            }
-            else if (Pais.paises.get(i).ventas > max.ventas){
+            if (Pais.paises.get(i).ventas > max.ventas){
                 max= Pais.paises.get(i);
             }
         }
