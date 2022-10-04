@@ -20,7 +20,7 @@ public class Pais{
             if (max=null){
                 max= pais.paises.get(i);
             }
-            elif (Pais.paises.get(i).ventas > max.ventas){
+            else if (Pais.paises.get(i).ventas > max.ventas){
                 max= pais.paises.get(i);
             }
         }

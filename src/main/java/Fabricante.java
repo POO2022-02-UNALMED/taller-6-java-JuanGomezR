@@ -27,7 +27,7 @@ public class Fabricante{
             if (max=null){
                 max= Fabricante.fabricas.get(i);
             }
-            elif (Fabricante.fabricas.get(i).ventas > max.ventas){
+            else if (Fabricante.fabricas.get(i).ventas > max.ventas){
                 max= Fabricante.fabricas.get(i);
             }
         }

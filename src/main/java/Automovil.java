@@ -2,7 +2,7 @@ package vehiculos;
 
 public class Automovil extends Vehiculo{
     public int puestos;
-    public Vehiculo(String placa, String nombre, int precio, int peso, Fabricante fabricante, int puestos){
+    public Automovil(String placa, String nombre, int precio, int peso, Fabricante fabricante, int puestos){
         this.placa=placa;
         this.nombre=nombre;
         this.precio=precio;
